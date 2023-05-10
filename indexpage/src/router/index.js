@@ -1,6 +1,7 @@
 import { createRouter,createWebHistory } from "vue-router";
 import HelloWorld from '@/components/HelloWorld.vue'
 import ChatPage from '@/components/ChatPage.vue'
+import PicDisplay from '@/components/PicDisplay.vue'
 
 const router = createRouter({
     history: createWebHistory(),
@@ -23,7 +24,15 @@ const router = createRouter({
                 'Main':ChatPage,
             }
         },
+        {
+            path:'/pic',
+            name:'Pic',
+            components:{
+                'Main':PicDisplay,
+            }
+        },
     ]
+    
 }
 )
 export default router;
